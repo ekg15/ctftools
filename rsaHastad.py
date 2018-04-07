@@ -1,9 +1,6 @@
 import sys
 import binascii
 import functools
-import codecs
-#from Crypto.PublicKey import RSA
-#from base64 import b64decode
 
 if (len(sys.argv)<7):
     print("\t\n\nArg error: python rsaHastad.py <n0 File> <n1 File> <n2 File> <c0 File> <n1 File> <c2 File> [--decimal/--hex/--b64] [-v/--verbose]\n\n")
@@ -148,7 +145,6 @@ if __name__ == '__main__':
     print("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~")
     print("Decoded Hex :\n",resultHex)
     print("---------------------------")
-    #print(type(resultHex))
     res = binascii.unhexlify(resultHex)
     print("As Ascii (inside b' '):\n", res)
     print("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~")
